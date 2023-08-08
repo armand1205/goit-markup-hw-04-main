@@ -550,3 +550,44 @@ ul {
   -webkit-box-shadow: 1px 10px 5px -2px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 1px 10px 5px -2px rgba(0, 0, 0, 0.4);
 }
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  padding: 16px;
+  background-color: rgb(177, 164, 164);
+  width: 50%;
+  margin: 0 auto;
+  height: 500px;
+  position: relative;
+}
+
+.is-hidden {
+  visibility: hidden;
+}
+
+.close-btn {
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+.close-btn:focus,
+.close-btn:hover {
+  background-color: rebeccapurple;
+}
